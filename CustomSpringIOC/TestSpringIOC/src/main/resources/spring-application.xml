@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="userDao" class="com.study.dao.impl.UserDaoImpl"/>
+    <bean id="userService" class="com.study.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+        <property name="username" value="rose"/>
+    </bean>
+</beans>
